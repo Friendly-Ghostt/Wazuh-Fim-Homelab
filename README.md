@@ -18,13 +18,12 @@ Deployed and configured Wazuh SIEM on Ubuntu Server in a virtualized homelab env
 
 Enabled File Integrity Monitoring by editing:
 
-`/var/ossec/etc/ossec.conf`
+C:\Program Files (x86)\ossec-agent\ossec.conf
 
 Configured:
 - `<syscheck>` enabled
 - Scan frequency set to 60 seconds
 - Monitored directories:
-  - /home (Linux)
   - C:\Users (Windows)
 
 ---
