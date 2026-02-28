@@ -33,7 +33,6 @@ Deployed and configured Wazuh SIEM on Ubuntu Server in a virtualized homelab env
 ## 🚧 Challenges & Troubleshooting
 - TCP connection failure between agent and manager
 - Firewall blocking port 1514
-- Incorrect monitored directory path
 - Default FIM frequency too high (12 hours)
 
 Resolved through:
