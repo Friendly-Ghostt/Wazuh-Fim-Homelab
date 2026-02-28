@@ -17,7 +17,7 @@ Deployed and configured Wazuh SIEM on Ubuntu Server in a virtualized homelab env
 ## ⚙ Configuration
 
 - `<syscheck>` enabled
-- Scan frequency set to 12 hours
+- Scan frequency set to 60 seconds
 - Monitored directories:
   - C:\Users\Administrator\Hackers</directories>
 ---
