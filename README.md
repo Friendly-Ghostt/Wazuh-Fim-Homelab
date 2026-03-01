@@ -11,12 +11,12 @@ FIM is essential for detecting:
 - Suspicious changes in configuration files  
 - Potential malware or intrusion activity  
 
-This project integrates **Wazuh Manager**, **Wazuh Agent**, and **Wazuh Dashboard** on Linux and Windows systems to simulate a real SOC workflow.
+This project integrates **Wazuh Manager**, **Wazuh Indexer**, **Wazuh Agent**, and **Wazuh Dashboard** on Linux and Windows systems to simulate a real SOC workflow.
 
 ---
 
 ## Architecture
-[Windows Server / Ubuntu Agent] --> [Wazuh Manager (Ubuntu)] --> [Wazuh Dashboard]
+[Ubuntu Server / Windows Agent] --> [Wazuh Manager (Ubuntu)] --> [Wazuh Dashboard]
 
 ---
 
@@ -69,7 +69,7 @@ sudo systemctl enable wazuh-manager
 sudo systemctl start wazuh-manager
 ```
 ---
-### 2. Wazuh Agent (Windows / Linux)
+### 2. Wazuh Agent (Windows)
 - Install agent on target machines
 - Configure agent to connect to Wazuh Manager IP
 - Start agent service
@@ -102,7 +102,7 @@ sudo systemctl start wazuh-dashboard
 ```
 ---
 ## Testing & Validation
-- Modify a monitored file (e.g., /etc/hosts).
+- Modify a monitored file/Directory
 - Wait for syscheck scan (or restart manager with sudo systemctl restart wazuh-manager).
 - Check Wazuh Dashboard for alerts under File Integrity Monitoring.
 ---
